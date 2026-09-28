@@ -21,17 +21,17 @@ The project follows an iterative code-test-run-resolve cycle.
 
 | Seed | RMSE | R² | Precision | Recall | F1 |
 |---:|---:|---:|---:|---:|---:|
-| 1 | 0.942 | 0.958 | 0.889 | 0.960 | 0.923 |
-| 7 | 0.994 | 0.953 | 0.906 | 0.960 | 0.932 |
-| 21 | 0.900 | 0.960 | 0.806 | 1.000 | 0.893 |
-| 42 | 0.932 | 0.945 | 0.847 | 1.000 | 0.917 |
-| 99 | 1.001 | 0.951 | 0.781 | 1.000 | 0.877 |
+| 1 | 0.962 | 0.956 | 0.907 | 0.980 | 0.942 |
+| 7 | 1.012 | 0.951 | 0.907 | 0.980 | 0.942 |
+| 21 | 0.928 | 0.958 | 0.847 | 1.000 | 0.917 |
+| 42 | 0.961 | 0.941 | 0.909 | 1.000 | 0.952 |
+| 99 | 1.013 | 0.950 | 0.877 | 1.000 | 0.935 |
 
 These results are for the synthetic simulator and should not be interpreted as real-world field accuracy.
 
 ## Issue found and resolved
 
-The first leak-decision rule required an Isolation Forest anomaly plus another condition. This produced high precision but poor recall on the held-out segment. The rule was revised to combine three signals: anomaly status, prediction residual, and pressure deviation from a previous-observation baseline. The revised detector improved recall to 100% for seed 42 and produced stable results across the five-seed robustness test.
+The first leak-decision rule required an Isolation Forest anomaly plus another condition. This produced high precision but poor recall on the held-out segment. The rule was revised to combine three signals: anomaly status, prediction residual, and pressure deviation from a previous-observation baseline. The revised detector improved recall to 100% for seed 42. The five-seed test then confirmed recall between 98.0% and 100.0% and F1 between 91.7% and 95.2% on the synthetic datasets.
 
 
 ## Automated local suite
