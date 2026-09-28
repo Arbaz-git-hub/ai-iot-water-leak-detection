@@ -167,7 +167,3 @@ The system uses simulated data because the capstone is software-only. Ground-tru
 ## Reproducibility
 
 The default simulation uses random seed 42. The robustness test additionally validates seeds 1, 7, 21, 42 and 99.
-
-## License
-
-This repository is intended for academic/capstone use.
