@@ -32,3 +32,8 @@ These results are for the synthetic simulator and should not be interpreted as r
 ## Issue found and resolved
 
 The first leak-decision rule required an Isolation Forest anomaly plus another condition. This produced high precision but poor recall on the held-out segment. The rule was revised to combine three signals: anomaly status, prediction residual, and pressure deviation from a previous-observation baseline. The revised detector improved recall to 100% for seed 42 and produced stable results across the five-seed robustness test.
+
+
+## Automated local suite
+
+The repository includes four pytest tests: three core pipeline tests in `tests/test_pipeline.py` and one five-seed robustness test in `tests/test_robustness.py`. Run the complete suite with `python -m pytest -q`.
