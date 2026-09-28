@@ -116,7 +116,7 @@ The project can be executed with:
 
 The optional dashboard can be started with:
 
-    streamlit run dashboard/app.py
+    python -m streamlit run dashboard/app.py
 
 ## 10. Results and Evaluation
 
