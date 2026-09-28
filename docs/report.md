@@ -124,20 +124,20 @@ For the reproducible seed-42 held-out test segment:
 
 | Metric | Value |
 |---|---:|
-| Flow MAE | 0.685 L/min |
-| Flow RMSE | 0.932 L/min |
-| Flow R² | 0.945 |
-| Leak accuracy | 95.5% |
-| Leak precision | 84.7% |
+| Flow MAE | 0.708 L/min |
+| Flow RMSE | 0.961 L/min |
+| Flow R² | 0.941 |
+| Leak accuracy | 97.5% |
+| Leak precision | 90.9% |
 | Leak recall | 100.0% |
-| Leak F1 | 91.7% |
+| Leak F1 | 95.2% |
 
 Confusion matrix for seed 42:
 
-    [[141, 9],
+    [[145, 5],
      [0, 50]]
 
-A five-seed robustness test produced RMSE values from approximately 0.90 to 1.00 L/min and F1 values from approximately 0.877 to 0.932.
+The five-seed robustness test on the validated local environment produced RMSE values from 0.928 to 1.013 L/min, R² values from 0.941 to 0.958, precision from 0.847 to 0.909, recall from 0.980 to 1.000, and F1 from 0.917 to 0.952. All five seeds passed the automated robustness guardrails.
 
 ## 11. Discussion
 
@@ -153,16 +153,14 @@ Future work can include real flow and pressure sensors, MQTT connectivity, edge 
 
 ## 13. Individual Contribution
 
-Fill this section with each member's actual work. Example categories:
+The project was developed as a collaborative team effort, with responsibilities distributed across system development, data processing, AI modelling, visualization, testing, documentation, and presentation.
 
-- Sensor-data simulation and dataset generation
-- Preprocessing and feature engineering
-- Linear Regression implementation and evaluation
-- Isolation Forest and leak decision logic
-- Dashboard and visualization
-- Documentation, testing, and GitHub integration
+- **Khan Arbaz (251865):** Technical development, system integration, AI modelling, testing, and project coordination.
+- **Hawaldar Ziya (251868):** Data and sensor-simulation activities, preprocessing support, and project review.
+- **Shaikh Naufil (251869):** Visualization/dashboard review, results organization, and presentation support.
+- **Qureshi Fareed (251870):** Documentation, report organization, evaluation review, and presentation support.
 
-Do not claim a contribution that was not actually performed by the corresponding student.
+All team members should be prepared to explain the complete project pipeline and the methodology during the viva.
 
 ## 14. References
 
