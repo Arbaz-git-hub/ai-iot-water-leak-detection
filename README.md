@@ -29,11 +29,11 @@ Generated files include sensor_data.csv, test_results.csv, metrics.json and PNG 
 
 ## Dashboard
 
-    streamlit run dashboard/app.py
+    python -m streamlit run dashboard/app.py
 
 ## Testing
 
-    pytest -q
+    python -m pytest -q
 
 The automated tests cover reproducibility, leak-event generation, missing-value handling, chronological splitting, model outputs and binary detection labels. See docs/TESTING.md for the recorded robustness results.
 
