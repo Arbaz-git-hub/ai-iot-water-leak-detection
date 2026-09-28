@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+<rect width="1200" height="500" fill="white"/>
+<g font-family="Arial, sans-serif" text-anchor="middle">
+<g fill="#e8f1ff" stroke="#2563eb" stroke-width="2"><rect x="35" y="175" width="180" height="120" rx="16"/><rect x="270" y="175" width="180" height="120" rx="16"/><rect x="505" y="110" width="190" height="110" rx="16"/><rect x="505" y="270" width="190" height="110" rx="16"/><rect x="750" y="175" width="180" height="120" rx="16"/><rect x="985" y="175" width="180" height="120" rx="16"/></g>
+<g font-size="20" font-weight="bold"><text x="125" y="210">Simulated IoT Sensors</text><text x="125" y="245" font-size="16" font-weight="normal">Flow • Pressure • Tank Level</text><text x="360" y="210">Preprocessing</text><text x="360" y="245" font-size="16" font-weight="normal">Cleaning • Features • Split</text><text x="600" y="150">Prediction Model</text><text x="600" y="185" font-size="16" font-weight="normal">Linear Regression</text><text x="600" y="310">Anomaly Model</text><text x="600" y="345" font-size="16" font-weight="normal">Isolation Forest</text><text x="840" y="210">Leak Decision</text><text x="840" y="245" font-size="16" font-weight="normal">Residual + Pressure + Anomaly</text><text x="1075" y="210">Application Layer</text><text x="1075" y="245" font-size="16" font-weight="normal">Plots + Streamlit Dashboard</text></g>
+<g stroke="#111827" stroke-width="3" fill="none"><path d="M215 235H270"/><path d="M450 235H505"/><path d="M695 165H750"/><path d="M695 325H750"/><path d="M930 235H985"/></g>
+<g fill="#111827"><path d="M270 235l-12-7v14z"/><path d="M505 235l-12-7v14z"/><path d="M750 165l-12-7v14z"/><path d="M750 325l-12-7v14z"/><path d="M985 235l-12-7v14z"/></g>
+<text x="600" y="55" font-size="28" font-weight="bold">AI-Based IoT Water Leak Detection Architecture</text>
+</g></svg>
